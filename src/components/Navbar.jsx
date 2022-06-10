@@ -113,11 +113,11 @@ const Menu = styled.div`
   position: relative;
   @media (max-width: 768px) {
     background-color: rgba(255, 255, 255, 0.9);
-    /* @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
       -webkit-backdrop-filter: blur(35px);
       backdrop-filter: blur(15px);
       background-color: rgba(255, 255, 255, 0.4);
-    } */
+    }
     border-radius: 1rem;
     margin-top: 1rem;
     box-shadow: -4px 8px 15px 1px rgba(0, 0, 0, 0.07);
