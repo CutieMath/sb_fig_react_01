@@ -80,8 +80,51 @@ const Button = styled.button`
     box-shadow: 10px 17px 11px -11px #ecb6d7;
     transform: translateY(-3px) translateX(-3px);
   }
+
+  @media (max-width: 670px) {
+    /* padding: 0.3rem; */
+  }
 `;
-const Menu = styled.div``;
-const LinkWrapper = styled.div``;
+
+const Hamburger = styled.div`
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  span {
+    height: 2px;
+    width: 25px;
+    background: #f774c5;
+    margin-bottom: 4px;
+    border-radius: 5px;
+  }
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`;
+const Menu = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    box-shadow: -4px 8px 15px 1px rgba(0, 0, 0, 0.07);
+    max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
+    width: 100%;
+    transition: max-height 0.3s ease-in-out;
+  }
+`;
+const LinkWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1.5rem 0;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
 const Menulink = styled.a``;
-const Hamburger = styled.div``;
