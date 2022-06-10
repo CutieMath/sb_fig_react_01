@@ -11,8 +11,8 @@ const HeroText = () => {
       <h1>Anything.</h1>
       <div>
         <BtnContainer>
-          <button>Research</button>
-          <button className="readmore">Read More</button>
+          <button>Read More</button>
+          <button className="research">Research</button>
         </BtnContainer>
       </div>
     </Container>
@@ -24,26 +24,27 @@ export default HeroText;
 const BtnContainer = styled.div`
   margin-top: 2rem;
   button {
-    background-color: #81d1ff;
+    font-weight: 700;
     border: none;
     padding: 0.9rem 1.1rem;
-    color: #fff;
+    color: #651fac;
+    background: transparent;
+    border: 3px solid #651fac;
     border-radius: 0.5rem;
-    box-shadow: 10px 13px 24px -7px #81d1ff;
     transition: all 0.2s ease-in-out;
     margin: 0.5rem;
     font-size: 0.8rem;
     cursor: pointer;
     &:hover {
-      box-shadow: 10px 17px 16px -11px #81d1ff;
+      box-shadow: 10px 17px 16px -11px #651fac;
       transform: translateY(-3px) translateX(-3px);
     }
   }
 
-  .readmore {
-    color: #81d1ff;
-    background: transparent;
-    border: 3px solid #81d1ff;
+  .research {
+    color: #fff;
+    background-color: #651fac;
+    box-shadow: 15px 10px 30px -11px #651fac;
   }
 `;
 
