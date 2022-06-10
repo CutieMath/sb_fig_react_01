@@ -16,8 +16,8 @@ const Navbar = () => {
           </Hamburger>
           <Menu isOpen={isOpen}>
             <LinkWrapper>
-              <Menulink href="">Search</Menulink>
-              <Menulink href="">Login</Menulink>
+              <a href="">Search</a>
+              <a href="">Login</a>
               <Button>Join Now</Button>
             </LinkWrapper>
           </Menu>
@@ -127,4 +127,3 @@ const LinkWrapper = styled.div`
     flex-direction: column;
   }
 `;
-const Menulink = styled.a``;
