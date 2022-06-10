@@ -27,7 +27,7 @@ export default Hero;
 
 const TiltWrapper = styled(Tilt)`
   width: 60%;
-  @media (max-width: 670px) {
+  @media (max-width: 970px) {
     display: none;
   }
 `;
@@ -54,8 +54,9 @@ const Wrapper = styled.div`
     background-color: rgba(255, 255, 255, 0.4);
   }
 `;
+// Wrapper for the image + text
 const InnerWrapper = styled.div`
-  max-width: 1000px;
+  max-width: 60%;
   height: 100%;
   margin: auto;
   display: flex;
